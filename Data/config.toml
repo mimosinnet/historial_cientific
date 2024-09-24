@@ -1,0 +1,200 @@
+years = [ 2019, 2025 ]
+coll_sections = [ 'a1', 'a2', 'a3', 'a4', 'a5', 'b1', 'b2', 'b3', 'b4', 'c1', 'c2', 'c3', 'd1', 'd2', 'd3', 'd4', 'd5', 'e1', 'e2', 'e3', 'e4', 'e5', 'e6']
+
+[sections]
+a1 = 'UWPY76KY'
+a2 = '442HYH2P'
+a3 = '2QEDV4YS'
+a4 = 'YPAJSHFV'
+a5 = 'R42QPUFI'
+b1 = '36U9M8UA'
+b2 = 'N7K6GRL2'
+b3 = 'BRL62EC2'
+b4 = 'PWH78LJ5'
+c1 = 'IARNE42E'
+c2 = 'FYCMV3HK'
+c3 = 'Q5E6D3QA'
+d1 = 'H9FYFWQY'
+d2 = 'YUGQZ453'
+d3 = 'PJNPKBEK'
+d4 = '3HN4HS2I'
+d5 = 'TZFYNY2Y'
+e1 = 'BW926N6F'
+e2 = '364GBY9U'
+e3 = 'QR2SVS4L'
+e4 = 'H4IXXNVT'
+e5 = 'P5RR9R5K'
+e6 = 'ARXRRBMK'
+
+[keys]
+UWPY76KY = 'a1'
+442HYH2P = 'a2'
+2QEDV4YS = 'a3'
+YPAJSHFV = 'a4'
+R42QPUFI = 'a5'
+36U9M8UA = 'b1'
+N7K6GRL2 = 'b2'
+BRL62EC2 = 'b3'
+PWH78LJ5 = 'b4'
+IARNE42E = 'c1'
+FYCMV3HK = 'c2'
+Q5E6D3QA = 'c3'
+H9FYFWQY = 'd1'
+YUGQZ453 = 'd2'
+PJNPKBEK = 'd3'
+3HN4HS2I = 'd4'
+TZFYNY2Y = 'd5'
+BW926N6F = 'e1'
+364GBY9U = 'e2'
+QR2SVS4L = 'e3'
+H4IXXNVT = 'e4'
+P5RR9R5K = 'e5'
+ARXRRBMK = 'e6'
+
+[credentials]
+library = 'group'
+api_id  = 2811609
+api_key = '9005IsJ91QWkkpmRLHSGRwGT'
+
+
+[coll_keys]
+UWPY76KY = 'a1. Papers in indexed peer-reviewed journals'
+442HYH2P = 'a2. Papers in non- indexed peer-review journals'
+2QEDV4YS = 'a3. Books'
+YPAJSHFV = 'a4. Book chapters'
+R42QPUFI = 'a5. Papers at conferences'
+36U9M8UA = 'b1. Current projects'
+N7K6GRL2 = 'b2. Former projects'
+BRL62EC2 = 'b3. Competitive Transference Grants'
+PWH78LJ5 = 'b4. Non-competitive Projects / Agreements'
+IARNE42E = 'c1. Org. International Conferences and Workshops'
+FYCMV3HK = 'c2. Participation in International Networks'
+Q5E6D3QA = 'c3. International stages'
+H9FYFWQY = 'd1. Completed doctoral theses'
+YUGQZ453 = 'd2. Doctoral thesis in progress'
+PJNPKBEK = 'd3. Final Master Theses'
+3HN4HS2I = 'd4. Post-Doctoral Grants'
+TZFYNY2Y = 'd5. Pre-Doctoral Grants'
+BW926N6F = 'e1. AFIN free monthly publication'
+364GBY9U = 'e2. Workshops and other dissemination activities'
+QR2SVS4L = 'e3. Podcasts'
+H4IXXNVT = 'e4. TV presentations'
+P5RR9R5K = 'e5. Magazine Articles'
+ARXRRBMK = 'e6. Blog Posts'
+
+# [config]["section"]["a11"]["title"]
+
+[section.a1]
+title =  'Papers in indexed peer-reviewed journals'
+key = 'UWPY76KY'
+types = [ 'journalArticle', ]
+
+[section.a2]
+title =  'Papers in non-indexed peer-review journals'
+key = '442HYH2P'
+types = [ 'journalArticle', ]
+
+[section.a3]
+title =  'Books'
+key = '2QEDV4YS'
+types = [ 'book', ]
+
+[section.a4]
+title =  'Book chapters'
+key = 'YPAJSHFV'
+types = [ 'bookSection', ]
+
+[section.a5]
+title =  'Papers at conferences'
+key = 'R42QPUFI'
+types = [ 'conferencePaper', ]
+
+[section.b1]
+title =  'Current projects'
+key = '36U9M8UA'
+types = [ 'journalArticle', ]
+
+[section.b2]
+title =  'Former projects'
+key = 'N7K6GRL2'
+types = [ 'journalArticle', ]
+
+[section.b3]
+title = 'Competitive Transference Grants'
+key = 'BRL62EC2'
+types = [ 'journalArticle', ]
+
+[section.b4]
+title = 'Non-competitive Projects / Agreements'
+key = 'PWH78LJ5'
+types = [ 'thesis', ]
+
+[section.c1]
+title = 'Org International Conferences and Workshops'
+key = 'IARNE42E'
+types = [ 'presentation', ]
+
+[section.c2]
+title = 'Participation in International Networks'
+key = 'FYCMV3HK'
+types = [ 'report', ]
+
+[section.c3]
+title = 'International stages'
+key = 'Q5E6D3QA'
+types = [ 'report', ]
+
+[section.d1]
+title = 'Completed doctoral theses'
+key = 'H9FYFWQY'
+types = [ 'thesis', ]
+
+[section.d2]
+title = 'Doctoral thesis in progress'
+key = 'YUGQZ453'
+types = [ 'thesis', ]
+
+[section.d3]
+title = 'Final Master Theses'
+key = 'PJNPKBEK'
+types = [ 'thesis', ]
+
+[section.d4]
+title = 'Post-Doctoral Grants'
+key = '3HN4HS2I'
+types = [ 'journalArticle', ]
+
+[section.d5]
+title = 'Pre-Doctoral Grants'
+key = 'TZFYNY2Y'
+types = [ 'journalArticle', ]
+
+[section.e1]
+title = 'AFIN free monthly publication'
+key = 'BW926N6F'
+types = [ 'magazineArticle', ]
+
+[section.e2]
+title = 'Workshops and other dissemination activities'
+key = '364GBY9U'
+types = [ 'presentation', ]
+
+[section.e3]
+title = 'Podcasts'
+key = 'QR2SVS4L'
+types = [ 'podcast', ]
+
+[section.e4]
+title = 'TV presentations'
+key = 'H4IXXNVT'
+types = [ 'tvBroadcast', ]
+
+[section.e5]
+title = 'Magazine Articles'
+key = 'P5RR9R5K'
+types = [ 'magazineArticle', ]
+
+[section.e6]
+title = 'Blog Posts'
+key = 'ARXRRBMK'
+types = [ 'blogPost', ]
