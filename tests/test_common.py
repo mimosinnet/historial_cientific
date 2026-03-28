@@ -1,5 +1,14 @@
 from datetime import date
-from bibliografia.common import sort_refs, get_date_object, completar, concat, neteja
+from bibliografia.common import (
+    comma_split,
+    sort_refs,
+    get_date_object,
+    completar,
+    concat,
+    neteja,
+    format_author,
+    string_null,
+)
 
 
 def test_get_date_object() -> None:
@@ -41,3 +50,36 @@ def test_neteja() -> None:
 
     for i in string:
         assert neteja(i) == "prova"
+
+
+def test_format_author() -> None:
+    test_author = [
+        ["author", "Joan", "Joan", "Pujol"],
+        ["author", "", "Joan", "Pujol"],
+        ["author", "Pujol, Joan", "", "Pujol, Joan"],
+        ["author", "Pujol, Joan", "", ""],
+        ["author", "", "", "Pujol, Joan"],
+    ]
+    test_editor = [
+        ["editor", "Joan", "Joan", "Pujol"],
+        ["editor", "", "Joan", "Pujol"],
+        ["editor", "Pujol, Joan", "", "Pujol, Joan"],
+        ["editor", "Pujol, Joan", "", ""],
+        ["editor", "", "", "Pujol, Joan"],
+    ]
+    for i in test_author:
+        print(i)
+        assert format_author(i[0], i[1], i[2], i[3]) == "Pujol, Joan; "
+
+    for i in test_editor:
+        assert format_author(i[0], i[1], i[2], i[3]) == "Joan Pujol, "
+
+
+def test_string_null() -> None:
+    assert string_null("") == 0
+    assert string_null("test") == 1
+
+
+def test_comma_split() -> None:
+    assert comma_split("lastName, firstName") == ["firstName", "lastName"]
+    assert comma_split("Name with no comma") == ["", "Name with no comma"]

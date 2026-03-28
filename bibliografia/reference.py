@@ -38,10 +38,10 @@ class Reference:
         match self.id:
             case "UWPY76KY":  # Indexed Articles
                 if self.latex:
-                    ref = f'{{\\bf {year}}}: {author}.  {item["title"]}. {{\\it {journal_title}}}, {journal_details}{{\\bf Index: {impact}}} {doi}'
+                    ref = f'{{\\bf {year}}}: {author}.  {item["title"]}. {{\\it {journal_title}}}, {journal_details}{{\\bf Index: {impact}}}. {doi}'
                     ref = ITEM + ref + FILBREAK
                 else:
-                    ref = f'{year}: {author}. {item["title"]}. {journal_title}, {journal_details}{doi}Index: {impact}'
+                    ref = f'{year}: {author}. {item["title"]}. {journal_title}, {journal_details}{doi}Index: {impact}.'
             case "442HYH2P":  # Non-Idexed Articles
                 if self.latex:
                     ref = f'{{\\bf {year}}}: {author}.  {item["title"]}. {{\\it {journal_title}}}, {journal_details} {doi}'
@@ -113,17 +113,19 @@ class Reference:
         author = Author(item["creators"]).get_author()
         year = Date(item["date"]).get_year()
         title = item["title"].strip()
-        place = completar(item["place"].strip())
+        # place = completar(item["place"].strip())
         publisher = completar(item["publisher"].strip())
         impacto = item["extra"]
         if impacto != "":
             impacto = f"Impacto: {impacto}. "
 
         if self.latex:
-            ref = f"{{\\bf {year}}}: {author}. {{\\it {title}}}. {place}: {publisher}."
+            # ref = f"{{\\bf {year}}}: {author}. {{\\it {title}}}. {place}: {publisher}."
+            ref = f"{{\\bf {year}}}: {author}. {{\\it {title}}}. {publisher}."
             ref = ITEM + ref + FILBREAK
         else:
-            ref = f"{year}: {author}. {title}. {place}: {publisher}. {impacto}"
+            # ref = f"{year}: {author}. {title}. {place}: {publisher}. {impacto}"
+            ref = f"{year}: {author}. {title}. {publisher}. {impacto}"
 
         ref = {year + author + str(self.item_number): ref}
 
@@ -140,7 +142,7 @@ class Reference:
         year = Date(item["date"]).get_year()
         title = item["title"].strip()
         bookTitle = item["bookTitle"].strip()
-        place = completar(item["place"].strip())
+        # place = completar(item["place"].strip())
         publisher = completar(item["publisher"].strip())
         pages = item["pages"]
         impacto = item["extra"]
@@ -148,10 +150,12 @@ class Reference:
             impacto = f"Impact: {impacto}."
 
         if self.latex:
-            ref = f"{{\\bf {year}}}: {author}. {title}. {{\\bf In}} {editor} (Ed.): {{\\it {bookTitle}}} (pp. {pages}). {place}: {publisher}. {{\\bf {impacto}}}"
+            # ref = f"{{\\bf {year}}}: {author}. {title}. {{\\bf In}} {editor} (Ed.): {{\\it {bookTitle}}} (pp. {pages}). {place}: {publisher}. {{\\bf {impacto}}}"
+            ref = f"{{\\bf {year}}}: {author}. {title}. {{\\bf In}} {editor} (Ed.): {{\\it {bookTitle}}} (pp. {pages}). {publisher}. {{\\bf {impacto}}}"
             ref = ITEM + ref + FILBREAK
         else:
-            ref = f"{year}: {author}. {title}. In {editor} (Ed.): {bookTitle} (pp. {pages}). {place}: {publisher}. {impacto}"
+            # ref = f"{year}: {author}. {title}. In {editor} (Ed.): {bookTitle} (pp. {pages}). {place}: {publisher}. {impacto}"
+            ref = f"{year}: {author}. {title}. In {editor} (Ed.): {bookTitle} (pp. {pages}). {publisher}. {impacto}"
 
         ref = {year + author + str(self.item_number): ref}
 
@@ -228,10 +232,10 @@ class Reference:
 
         elif self.id == "Q5E6D3QA":  # International stages
             if self.latex:
-                ref = f"{{\\bf {year}}}. {author}. {{\\it {title}}}{concatenate} {{\\bf Supervised by}}: {supervisor}"
+                ref = f"{{\\bf {year}}}. {author}. {{\\it {title}}}{concatenate}"
                 ref = ITEM + ref + FILBREAK
             else:
-                ref = f"{{\\bf {year}}}. {author}. {{\\it {title}}}{concatenate} Supervised by: {supervisor}"
+                ref = f"{{\\bf {year}}}. {author}. {{\\it {title}}}{concatenate}"
 
         ref = {year + author + str(self.item_number): ref}
 

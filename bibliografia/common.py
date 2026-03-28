@@ -43,10 +43,63 @@ def concat(inici, final, *args):  # #<
     return inici + ", ".join(text) + final  # #>
 
 
-# def nejeja #<
+# def neteja puntuació final #<
 def neteja(text):
     return text.strip().removesuffix(";").removesuffix(",").removesuffix(".")
 
+
+# #>
+
+
+# def formar author #<
+def format_author(auth_type, name, firstName, lastName):
+    final_firstName, final_lastName = "", ""
+
+    case_string = (
+        string_null(name) + string_null(firstName) * 2 + string_null(lastName) * 4
+    )
+
+    match case_string:
+        case 1 | 5:  # name
+            final_firstName, final_lastName = comma_split(name)
+        case 4:  # lastName
+            final_firstName, final_lastName = comma_split(lastName)
+        case 6 | 7:  # firstName lastName
+            final_firstName, final_lastName = firstName, lastName
+
+    # Output based on auth_type
+    if auth_type == "editor":
+        return f"{final_firstName} {final_lastName}, "
+    else:
+        return f"{final_lastName}, {final_firstName}; "
+
+
+# #>
+
+# Complementary functions #<
+
+
+# def string_null, check if string is not null #<
+def string_null(string):
+    if string:
+        return 1
+    else:
+        return 0
+
+
+# #>
+
+
+# def comma_split #<
+def comma_split(string):
+    if "," in string:
+        lastName, firstName = string.split(",", 1)
+        return [firstName.strip(), lastName.strip()]
+    else:
+        return ["", string.strip()]
+
+
+# #>
 
 # #>
 

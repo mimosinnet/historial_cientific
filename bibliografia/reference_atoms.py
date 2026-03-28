@@ -1,6 +1,6 @@
 import re
 import datetime  # strftime
-from .common import neteja, get_date_object
+from .common import format_author, neteja, get_date_object, format_author
 
 
 # Class Authors #<
@@ -14,48 +14,27 @@ class Author:
         creator = self.creators
         auth_type = self.auth_type
 
-        author = str("NoAutor")
+        author = str("NoAuthor")
         if len(creator) == 0:
             return author
 
-        author = ""
+        authors = ""
         for i in range(len(creator)):
 
             if creator[i]["creatorType"] != auth_type:
                 continue
             else:
                 item = creator[i]
-                name = item.get("name", "")
-                firstName = item.get("firstName", "")
-                lastName = item.get("lastName", "")
+                author = format_author(
+                    auth_type,
+                    item.get("name", ""),
+                    item.get("firstName", ""),
+                    item.get("lastName", ""),
+                )
 
-                # Han posat cognom, nom en el cognom
-                if firstName == "" and lastName != "":
-                    name = lastName
+                authors += author
 
-                if name != "":
-                    name_array = name.split(",")
-                    if len(name_array) == 2:
-                        firstName = name_array[1].strip()
-                        lastName = name_array[0].strip()
-                    else:
-                        lastName = name_array[0].strip()
-
-                if lastName != "":
-                    lastName += ", "
-
-                author_name = ""
-                if auth_type == "editor":
-                    author_name = firstName + " " + lastName
-                else:
-                    author_name = lastName + firstName
-
-                if auth_type == "editor":
-                    author += author_name
-                else:
-                    author += author_name + "; "
-
-        return neteja(author)
+        return neteja(authors)
 
     # ♯>
 
@@ -158,19 +137,20 @@ class Impact:
         jif = self.jif
         jrc = self.q_jrc
         sjr = self.sjr
-        citations = self.citations
+        # citations = self.citations
 
         jcr_inx = ""
         sjr_inx = ""
         cit_inx = ""
+        # No afegim citations
         if jif != "":
-            jcr_inx = f"JCR: {jif}: {jrc}.  "
+            jcr_inx = f"JCR: {jif}: {jrc}, "
         if sjr != "":
-            sjr_inx = f"{sjr}. "
-        if citations != "":
-            cit_inx = f"Citations: {citations}. "
+            sjr_inx = f"{sjr}"
+        # if citations != "":
+        #    cit_inx = f"Citations: {citations}. "
 
-        return jcr_inx + sjr_inx + cit_inx
+        return neteja(jcr_inx + sjr_inx + cit_inx)
 
 
 # #>
