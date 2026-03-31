@@ -4,29 +4,29 @@
 \contentsline {chapter}{\numberline {4}Current Members}{5}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Scientific Production}{6}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Articles published in indexed journals}{6}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Articles in Scientific Journals}{18}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Books}{20}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Book Chapters}{21}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Conference Presentations}{24}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Projects}{43}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Current competitive projects}{43}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Former competitive projects}{44}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Competitive Transference Grants}{47}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Non-competitive Projects / Agreements}{48}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Internationalisation}{50}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Organisation of International Conferences and Workshops}{50}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Participation in International Networks}{51}{section.7.2}%
-\contentsline {section}{\numberline {7.3}International stages}{51}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Research Training}{52}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Completed doctoral theses}{52}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Doctoral thesis in progress}{53}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Final Master Theses}{55}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Post-Doctoral Grants}{57}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Pre-Doctoral Grants}{57}{section.8.5}%
-\contentsline {chapter}{\numberline {9}Knowledge Transfer}{58}{chapter.9}%
-\contentsline {section}{\numberline {9.1}AFIN free monthly publication}{58}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Workshops}{61}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Podcasts}{62}{section.9.3}%
-\contentsline {section}{\numberline {9.4}TV Presentations}{65}{section.9.4}%
-\contentsline {section}{\numberline {9.5}Maganize Articles}{65}{section.9.5}%
-\contentsline {section}{\numberline {9.6}Blog Posts}{65}{section.9.6}%
+\contentsline {section}{\numberline {5.2}Articles in Scientific Journals}{20}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Books}{22}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Book Chapters}{22}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Conference Presentations}{27}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Projects}{45}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Current competitive projects}{45}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Former competitive projects}{46}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Competitive Transference Grants}{49}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Non-competitive Projects / Agreements}{50}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Internationalisation}{52}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Organisation of International Conferences and Workshops}{52}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Participation in International Networks}{53}{section.7.2}%
+\contentsline {section}{\numberline {7.3}International stages}{53}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Research Training}{54}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Completed doctoral theses}{54}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Doctoral thesis in progress}{56}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Final Master Theses}{58}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Post-Doctoral Grants}{60}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Pre-Doctoral Grants}{60}{section.8.5}%
+\contentsline {chapter}{\numberline {9}Knowledge Transfer}{61}{chapter.9}%
+\contentsline {section}{\numberline {9.1}AFIN free monthly publication}{61}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Workshops}{64}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Podcasts}{65}{section.9.3}%
+\contentsline {section}{\numberline {9.4}TV Presentations}{68}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Maganize Articles}{69}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Blog Posts}{69}{section.9.6}%

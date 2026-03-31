@@ -1,6 +1,6 @@
 import re
-import datetime  # strftime
-from .common import format_author, neteja, get_date_object, format_author
+# import datetime  # strftime
+from .common import format_author, neteja, get_date_object
 
 
 # Class Authors #<
